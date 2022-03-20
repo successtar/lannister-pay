@@ -37,10 +37,10 @@ const getFeeKey = (tranx, keys) => {
             let matchKey = availableKeysEntity.find(item => {
                     // Entity possible match
                     return (item.startsWith(`${keyBuilderEntity}(${tranx.PaymentEntity.ID})`) ||
-                    item.startsWith(`${keyBuilderEntity}(${tranx.PaymentEntity.Number})`) ||
-                    item.startsWith(`${keyBuilderEntity}(${tranx.PaymentEntity.SixID.toLowerCase?.()})`) ||
-                    item.startsWith(`${keyBuilderEntity}(${tranx.PaymentEntity.Brand.toLowerCase()})`) ||
-                    item.startsWith(`${keyBuilderEntity}(${tranx.PaymentEntity.Issuer.toLowerCase()})`) )
+                    item.startsWith(`${keyBuilderEntity}(${tranx.PaymentEntity.Number})`.toLowerCase()) ||
+                    item.startsWith(`${keyBuilderEntity}(${tranx.PaymentEntity.SixID})`.toLowerCase()) ||
+                    item.startsWith(`${keyBuilderEntity}(${tranx.PaymentEntity.Brand})`.toLowerCase()) ||
+                    item.startsWith(`${keyBuilderEntity}(${tranx.PaymentEntity.Issuer})`.toLowerCase()) )
                 } );
 
             if (matchKey){
