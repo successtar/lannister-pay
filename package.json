@@ -1,0 +1,26 @@
+{
+  "name": "lannister-pay",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.17.3"
+  },
+  "description": "LANNISTER PAY (NodeJS Assessment)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/successtar/lannister-pay.git"
+  },
+  "keywords": [
+    "pay",
+    "fees",
+    "Flutterwave"
+  ],
+  "author": "Hammed Osanyinpeju",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
