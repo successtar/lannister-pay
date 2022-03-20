@@ -1,4 +1,9 @@
-
+/**
+ * Retrieve matching fee key for the trnsaction and return null if no match
+ * @param {object} tranx transaction to be treated
+ * @param {Array} keys for all the fees
+ * @returns {String}
+ */
 const getFeeKey = (tranx, keys) => {
 
     let locale = tranx['PaymentEntity']['Country'] === "NG" ? "locl" : "intl";
